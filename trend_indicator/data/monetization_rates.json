@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "unit": "USD RPM per 1000 views, midpoint of documented range",
+    "rate_formula": "rate = rpm_mid / normalized_max",
+    "normalized_max": 2.5,
+    "refresh_cadence": "quarterly (manual/agent pass, not live data -- design doc section 2)",
+    "source": "trend-indicator design doc section 1b (Mediacube, AIR Media-Tech, Quasa)"
+  },
+  "rates": {
+    "youtube_shorts": {
+      "general": {"rpm_low": 0.02, "rpm_high": 0.12, "rpm_mid": 0.07, "rate": 0.028},
+      "finance_business": {"rpm_low": 0.07, "rpm_high": 0.17, "rpm_mid": 0.12, "rate": 0.048},
+      "sports": {
+        "rpm_low": 0.02,
+        "rpm_high": 0.12,
+        "rpm_mid": 0.07,
+        "rate": 0.028,
+        "note": "sports is not a top-RPM niche per design doc 1b; it wins on demand volume/timing, not RPM -- same band as general"
+      }
+    },
+    "tiktok_rewards": {
+      "general": {"rpm_low": 0.40, "rpm_high": 1.00, "rpm_mid": 0.70, "rate": 0.28},
+      "finance_tech_legal_business": {"rpm_low": 1.00, "rpm_high": 2.50, "rpm_mid": 1.75, "rate": 0.70},
+      "sports": {"rpm_low": 0.40, "rpm_high": 1.00, "rpm_mid": 0.70, "rate": 0.28}
+    }
+  }
+}
