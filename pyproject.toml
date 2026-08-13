@@ -1,0 +1,8 @@
+[project]
+name = "trend-indicator"
+version = "0.1.0"
+description = "Ranks aesop-ecosystem opportunities from free/cheap trend signals."
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
